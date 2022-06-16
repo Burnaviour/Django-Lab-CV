@@ -1,0 +1,35 @@
+
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<body class="d-flex flex-column min-vh-100 bg-dark">
+
+
+    <div class="container my-5 ">
+        <form action="contact me.html">
+            <div class="mb-3 mt-5">
+                <label for="text" class="form-label text-white">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label text-white">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="text" class="form-label text-white">Subject:</label>
+                <input type="text" class="form-control" placeholder="Subject" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="comment" class="text-white">Project Details:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project details"></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Contact Me</button>
+        </form>
+
+    </div>
+    {% endblock %}
